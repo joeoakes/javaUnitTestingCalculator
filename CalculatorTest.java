@@ -32,6 +32,11 @@ public class CalculatorTest {
     }
 
     @Test
+    /*assertEquals(expected, actual, delta);
+    expected: The expected value.
+    actual: The actual value.
+     delta: The maximum allowed difference between the expected and actual values for them to be considered equal.
+     */
     public void testDivide() {
         assertEquals(2.5, calculator.divide(5, 2), 0.001);
     }
