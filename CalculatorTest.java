@@ -8,12 +8,18 @@ public class CalculatorTest {
 
     @BeforeEach
     public void setUp() {
+        //Create a new object calculator
         calculator = new Calculator();
     }
 
     @Test
     public void testAdd() {
         assertEquals(5, calculator.add(2, 3));
+    }
+
+    @Test
+    public void testAddNotEqual() {
+        assertNotEquals(5, calculator.add(5, 3));
     }
 
     @Test
