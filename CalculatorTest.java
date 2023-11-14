@@ -53,5 +53,15 @@ public class CalculatorTest {
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(5, 0));
     }
 
+    @Test
+    public void testLessThan1(){
+       assertTrue(calculator.lessThan(1, 5));
+    }
+
+    public void testLessThan2(){
+        assertFalse(calculator.lessThan(5, 1));
+    }
+
+
 }
 

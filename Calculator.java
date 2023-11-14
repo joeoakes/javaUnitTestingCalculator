@@ -17,4 +17,8 @@ public class Calculator {
         }
         return (double) a / b;
     }
+
+    public boolean lessThan(int a, int b) {
+        return a < b;
+    }
 }
