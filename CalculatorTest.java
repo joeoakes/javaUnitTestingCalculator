@@ -17,6 +17,11 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testAddFail() {
+        assertEquals(5, calculator.add(5, 3));
+    }
+
+    @Test
     public void testSubtract() {
         assertEquals(2, calculator.subtract(5, 3));
     }
@@ -33,7 +38,9 @@ public class CalculatorTest {
 
     @Test
     public void testDivideByZero() {
+        //A lambda expression is a concise way to represent an anonymous function or a block of code
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(5, 0));
     }
+
 }
 
